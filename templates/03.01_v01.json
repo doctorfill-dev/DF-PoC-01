@@ -1,0 +1,26 @@
+{
+  "form_name": "Form_AVS_blank",
+  "total_fields": 4,
+  "fields": [
+    {
+      "id": "1.1",
+      "question": "Quel est le nom du patient ?",
+      "type_guided": "text:multiline"
+    },
+     {
+      "id": "1.2",
+      "question": "Quel est la date de naissance du patient ?",
+      "type_guided": "text:multiline"
+    },
+   {
+      "id": "1.3",
+      "question": "Quel est le motif de l'incapacité de travail (maladie ou accident) ?",
+      "type_guided": "text:multiline"
+    },
+     {
+      "id": "1.4",
+      "question": "Quel diagnostic poserais-tu ?",
+      "type_guided": "text:multiline"
+    }
+  ]
+}

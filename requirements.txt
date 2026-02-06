@@ -1,0 +1,8 @@
+faiss-cpu
+numpy
+requests
+sentence-transformers
+chromadb
+openai
+tqdm
+tiktoken
