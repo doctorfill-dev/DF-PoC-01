@@ -1,4 +1,4 @@
-# DF-POC-01
+# DF-PoC-01
 Ce PoC a pour but de tester la possibilité de traiter une grande quantité d'informations avec une configuration locale raisonnable.
 
 Le but global du projet est de construire une application locale qui remplit automatiquement un formulaire PDF à partir d’un contexte documentaire (principalement des rapports médicaux). Le contexte peut être volumineux (~80’000 tokens). L’application doit proposer une extraction fiable, traçable (sources/citations) et produire une sortie exploitable pour remplir le PDF.
@@ -26,24 +26,3 @@ Le reste est laisser par défaut
 3) Utiliser/créer une template QA (le format est relativement libre, il faut cependant adapter le prompt dans ce cas) et ajouter un contexte (format `.txt`)
 4) Changer les variables PATH si nécessaire
 5) Exéuter l'app : `python pipeline.py`
-
-## Résultats
-
-### first pass
-First pass [commit: 9c817bb0951ad559d7e1ef5baa381223c7de9365] - [doc](tmp/output/resultat_final_v01.json) :
-```bash
-📂 Chargement des données...
-✂️  Découpage terminé : 9 documents extraits.
-⏳ Indexation des documents en cours...
-✅ 9 segments indexés dans ChromaDB.
-
-🚀 Démarrage de l'extraction en mode BATCH (77 champs valides)...
-
-100%|██████████| 16/16 [14:11<00:00, 53.23s/batch]
-
-✅ Extraction terminée. 76 champs traités.
-📁 Résultats dans 'resultat_final.json'
-```
-
-✅ Extraction terminée avec Reranking. 75 champs traités.
-```
