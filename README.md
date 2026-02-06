@@ -15,7 +15,7 @@ Par grande quantité d'information, il est entendu un contexte allant jusqu'à 1
 - Language : Python 3.13.5
 
 ## Configuration
-0) Créer un environnement virtuel python (`python -m venv venv`) et l'activer (macos/linux: `source venv/bin/activate`, win11: `DF-PoC-01\Scripts\activate`)
+0) Créer un environnement virtuel python (`python -m venv venv`) et l'activer (macos/linux: `source venv/bin/activate`, win11: `venv\Scripts\activate`)
 1) installer le modèle (qwen2.5-14b-instruct), puis lancer le serveur LM Studio (https://lmstudio.ai/docs/developer/core/server)
 ```txt
 # configuration du serveur
