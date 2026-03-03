@@ -267,6 +267,7 @@ def main():
             # --- 5. APPEL LLM ---
             response = client.chat.completions.create(
                 model=MODEL_NAME,
+                response_format={ "type": "json_object" }, # todo: à tester si ça fonctionne
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
