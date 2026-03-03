@@ -97,7 +97,7 @@ def main():
     client = OpenAI(base_url=LM_STUDIO_URL, api_key=API_KEY)
 
     print("⚖️  Chargement du modèle de Reranking...")
-    reranker = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')
+    reranker = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2', device='cuda')
 
     print("📂 Chargement des données...")
     try:
